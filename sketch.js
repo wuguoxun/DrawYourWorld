@@ -90,7 +90,7 @@ function pendulum() {
   imageMode(CORNER);
   image(buffer, 0, 0, width, height);
   let vol = mic.getLevel();
-  let h = map(vol, 0, 0.001, 0, 0.5, true);
+  let h = map(vol, 0, 0.001, 0, 1, true);
   console.log("mic level is: " + mic.getLevel());
   console.log(h);
   let num1 = -(g + h) * (2 * m1 + m2) * sin(a1);
